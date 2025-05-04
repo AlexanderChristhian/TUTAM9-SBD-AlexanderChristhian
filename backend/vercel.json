@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "server.js",
@@ -8,19 +7,9 @@
   ],
   "routes": [
     {
-      "src": "/user/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/score/(.*)",
-      "dest": "/server.js"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "/server.js",
+      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
