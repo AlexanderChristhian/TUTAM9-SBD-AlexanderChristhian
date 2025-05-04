@@ -15,6 +15,7 @@ const corsOptions = {
   origin: '*', // Allow all origins temporarily for testing
   origin: [
     'http://localhost:5173',
+    'https://tutam-9-sbd-alexander-christhian-backend.vercel.app',
     'http://localhost:3000'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
